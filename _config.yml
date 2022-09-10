@@ -1,0 +1,61 @@
+# ----
+# Site
+
+title: Axell Chanders
+url: "https://axellchanders.com"
+baseurl:
+google_analytics_key:
+
+# Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
+logo: /siteicon.png
+description: Photography portfolio template for Jekyll.
+author:
+  name: Axell Chanders
+  email: email@axellchanders.com
+  twitter: # twitter username without the @ symbol
+social:
+  name: Axell Chanders
+  links:
+    - 
+
+# -----
+# Build
+
+timezone: Etc/UTC
+
+permalink: pretty
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+      text_width: true
+      image: /uploads/1.jpg
+  -
+    scope:
+      path: "index.html"
+    values:
+      text_width: false
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENCE
+
+# -----------
+# CloudCannon
+
+_options:
+  image:
+    width: 2048
+    height: 1365
+    resize_style: "contain"
+    mime_type: "image/jpeg"
+    expandable: true
